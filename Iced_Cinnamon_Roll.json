@@ -1,0 +1,170 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "CINNAMON ROLL",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CREAM CHEESE ICING",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "WATER",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CORN SYRUP",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "MILK",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "MICROWAVE",
+        "states": [],
+        "ingredients": [
+          "CINNAMON ROLL"
+        ],
+        "container": null
+      },
+      {
+        "label": "CINNAMON ROLL",
+        "states": [
+          "defrosted"
+        ],
+        "ingredients": [],
+        "container": "MICROWAVE"
+      },
+      {
+        "label": "MICROWAVE",
+        "states": [],
+        "ingredients": [
+          "CREAM CHEESE ICING"
+        ],
+        "container": null
+      },
+      {
+        "label": "CREAM CHEESE ICING",
+        "states": [
+          "defrosted"
+        ],
+        "ingredients": [],
+        "container": "MICROWAVE"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "CREAM CHEESE ICING",
+        "states": [
+          "defrosted"
+        ],
+        "ingredients": [],
+        "container": "MICROWAVE"
+      },
+      {
+        "label": "WATER",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CORN SYRUP",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "MILK",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "BOWL",
+        "states": [],
+        "ingredients": [
+          "CREAM CHEESE ICING",
+          "WATER",
+          "CORN SYRUP",
+          "MILK"
+        ],
+        "container": null
+      },
+      {
+        "label": "CREAM CHEESE ICING",
+        "states": [
+          "mixed"
+        ],
+        "ingredients": [],
+        "container": "BOWL"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "CINNAMON ROLL",
+        "states": [
+          "defrosted"
+        ],
+        "ingredients": [],
+        "container": "MICROWAVE"
+      },
+      {
+        "label": "CREAM CHEESE ICING",
+        "states": [
+          "mixed"
+        ],
+        "ingredients": [],
+        "container": "BOWL"
+      }
+    ],
+    "motion_node": "frost",
+    "output_nodes": [
+      {
+        "label": "CINNAMON ROLL",
+        "states": [
+          "iced"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

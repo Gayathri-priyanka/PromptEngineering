@@ -1,0 +1,133 @@
+[
+    {
+       "input_nodes": [
+           {
+               "label": "cutting board",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "frozen"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "pick-and-place",
+       "output_nodes": [
+           {
+               "label": "cutting board",
+               "states": [],
+               "ingredients": [
+                   "hash brown potato"
+               ],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "frozen"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "saute pan",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "frozen"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           },
+           {
+               "label": "oil",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "heat",
+       "output_nodes": [
+           {
+               "label": "saute pan",
+               "states": [
+                   "heated"
+               ],
+               "ingredients": [
+                   "oil"
+               ],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "frozen"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           },
+           {
+               "label": "oil",
+               "states": [],
+               "ingredients": [],
+               "container": "saute pan"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "saute pan",
+               "states": [
+                   "heated"
+               ],
+               "ingredients": [
+                   "oil"
+               ],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "frozen"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           }
+       ],
+       "motion_node": "cook",
+       "output_nodes": [
+           {
+               "label": "saute pan",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "hash brown potato",
+               "states": [
+                   "cooked"
+               ],
+               "ingredients": [],
+               "container": "saute pan"
+           }
+       ]
+   }
+]

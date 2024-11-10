@@ -1,0 +1,377 @@
+```json
+[
+  {
+    "input_nodes": [
+      {
+        "label": "water",
+        "states": [
+          "cold"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "red potato",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "tomatoes",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "corn",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "onion",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "green pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "red bell pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "olive oil",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "spices",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "dried onions",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vinegar",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "brown sugar",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "citric acid",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "smoke flavor",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "canola oil",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cumin",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cilantro",
+        "states": [
+          "fresh"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "black pepper",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "dried oregano",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "put-in-pot",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "water",
+          "red potato",
+          "tomatoes",
+          "corn",
+          "onion",
+          "green pepper",
+          "red bell pepper",
+          "salt",
+          "olive oil",
+          "sugar",
+          "spices",
+          "dried onions",
+          "vinegar",
+          "brown sugar",
+          "garlic",
+          "citric acid",
+          "smoke flavor",
+          "canola oil",
+          "cumin",
+          "cilantro",
+          "black pepper",
+          "dried oregano"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "red potato",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "tomatoes",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "corn",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "onion",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "green pepper",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "red bell pepper",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "salt",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "olive oil",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "sugar",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "spices",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "dried onions",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "vinegar",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "brown sugar",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "garlic",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "citric acid",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "smoke flavor",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "canola oil",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "cumin",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "cilantro",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "black pepper",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "dried oregano",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "water",
+          "red potato",
+          "tomatoes",
+          "corn",
+          "onion",
+          "green pepper",
+          "red bell pepper",
+          "salt",
+          "olive oil",
+          "sugar",
+          "spices",
+          "dried onions",
+          "vinegar",
+          "brown sugar",
+          "garlic",
+          "citric acid",
+          "smoke flavor",
+          "canola oil",
+          "cumin",
+          "cilantro",
+          "black pepper",
+          "dried oregano"
+        ],
+        "container": null
+      }

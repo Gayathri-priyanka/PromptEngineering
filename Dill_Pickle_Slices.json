@@ -1,0 +1,29 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "PICKLESLICES",
+                "states": [
+                    "in container"
+                ],
+                "ingredients": [
+                    "PICKLESLICES"
+                ],
+                "container": "JAR"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "PICKLESLICES",
+                "states": [
+                    "in container"
+                ],
+                "ingredients": [
+                    "PICKLESLICES"
+                ],
+                "container": "PLATE"
+            }
+        ]
+    }
+]

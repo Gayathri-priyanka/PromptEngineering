@@ -1,0 +1,376 @@
+[
+    {
+       "input_nodes": [
+           {
+               "label": "Cutting Board 1",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Tofu",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Knife 1",
+               "states": [
+                   "available"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "pick-and-place",
+       "output_nodes": [
+           {
+               "label": "Cutting Board 1",
+               "states": [],
+               "ingredients": [
+                   "Tofu"
+               ],
+               "container": null
+           },
+           {
+               "label": "Tofu",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 1"
+           }
+       ]
+   },
+    {
+       "input_nodes": [
+           {
+               "label": "Tofu",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 1"
+           },
+           {
+               "label": "Knife 1",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "slice",
+       "output_nodes": [
+           {
+               "label": "Tofu",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 1"
+           }
+       ]
+       
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Cutting Board 2",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Potato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Knife 2",
+               "states": [
+                   "available"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "pick-and-place",
+       "output_nodes": [
+           {
+               "label": "Cutting Board 2",
+               "states": [],
+               "ingredients": [
+                   "Potato"
+               ],
+               "container": null
+           },
+           {
+               "label": "Potato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 2"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Potato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 2"
+           },
+           {
+               "label": "Knife 2",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "slice",
+       "output_nodes": [
+           {
+               "label": "Potato",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 2"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Potato",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 2"
+           },
+           {
+               "label": "Oil",
+               "states": [
+                   "available"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "add-and-mix",
+       "output_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Potato added"
+               ],
+               "ingredients": [
+                   "Potato"
+               ],
+               "container": null
+           },
+           {
+               "label": "Potato",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           },
+           {
+               "label": "Oil",
+               "states": [
+                   "added"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Potato added"
+               ],
+               "ingredients": [
+                   "Potato"
+               ],
+               "container": null
+           },
+           {
+               "label": "Tofu",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Cutting Board 1"
+           }
+       ],
+       "motion_node": "add-and-mix",
+       "output_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Tofu added"
+               ],
+               "ingredients": [
+                   "Potato",
+                   "Tofu"
+               ],
+               "container": null
+           },
+           {
+               "label": "Tofu",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Tofu added"
+               ],
+               "ingredients": [
+                   "Potato",
+                   "Tofu"
+               ],
+               "container": null
+           },
+           {
+               "label": "Salsa",
+               "states": [
+                   "available"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "add-and-mix",
+       "output_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Salsa added"
+               ],
+               "ingredients": [
+                   "Potato",
+                   "Tofu",
+                   "Salsa"
+               ],
+               "container": null
+           },
+           {
+               "label": "Salsa",
+               "states": [
+                   "added"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [
+                   "Salsa added"
+               ],
+               "ingredients": [
+                   "Potato",
+                   "Tofu",
+                   "Salsa"
+               ],
+               "container": null
+           },
+           {
+               "label": "Onion",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "Knife 3",
+               "states": [
+                   "available"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "pick-and-place",
+       "output_nodes": [
+           {
+               "label": "Pan 1",
+               "states": [],
+               "ingredients": [
+                   "Potato",
+                   "Tofu",
+                   "Salsa",
+                   "Onion"
+               ],
+               "container": null
+           },
+           {
+               "label": "Onion",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "Onion",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "Pan 1"
+           },
+           {
+               "label": "Knife 3",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "dice",
+       "output_nodes": [
+           {
+               "label": "Onion",

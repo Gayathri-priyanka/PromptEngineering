@@ -1,0 +1,387 @@
+``` JSON
+[
+  {
+    "input_nodes": [
+      {
+        "label": "dry ingredients bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "wheat flour",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "baking soda",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "chocolate chips",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "dry ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt"
+        ],
+        "container": null
+      },
+      {
+        "label": "wheat flour",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "dry ingredients bowl"
+      },
+      {
+        "label": "sugar",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "dry ingredients bowl"
+      },
+      {
+        "label": "baking soda",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "dry ingredients bowl"
+      },
+      {
+        "label": "salt",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "dry ingredients bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "dry ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt"
+        ],
+        "container": null
+      },
+      {
+        "label": "chocolate chips",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "whisk",
+    "output_nodes": [
+      {
+        "label": "dry ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips"
+        ],
+        "container": null
+      },
+      {
+        "label": "chocolate chips",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "dry ingredients bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "dry ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips"
+        ],
+        "container": null
+      },
+      {
+        "label": "wet ingredients bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "brown sugar",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "egg",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vanilla extract",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "wet ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {
+        "label": "brown sugar",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "wet ingredients bowl"
+      },
+      {
+        "label": "egg",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "wet ingredients bowl"
+      },
+      {
+        "label": "vanilla extract",
+        "states": [
+          ""
+        ],
+        "ingredients": [],
+        "container": "wet ingredients bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "wet ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {
+        "label": "dry ingredients bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "whisk",
+    "output_nodes": [
+      {
+        "label": "batter bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "batter bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {
+        "label": "sheet pan",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "batter bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {
+        "label": "sheet pan",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "batter bowl",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {
+        "label": "cookie dough",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "spoon",
+    "output_nodes": [
+      {
+        "label": "cookie dough",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cookie dough",
+        "states": [],
+        "ingredients": [
+          "wheat flour",
+          "sugar",
+          "baking soda",
+          "salt",
+          "chocolate chips",
+          "brown sugar",
+          "egg",
+          "vanilla extract"
+        ],
+        "container": null
+      },
+      {

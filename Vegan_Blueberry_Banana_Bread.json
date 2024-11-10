@@ -1,0 +1,388 @@
+{
+    "input_nodes": [
+        {
+            "label": "cutting board",
+            "states": [
+                "empty"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "wheat flour",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "banana",
+            "states": [
+                "whole"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "sugar in the raw",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "applesauce",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "vegetable oil blend",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "water",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "brown sugar",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "blueberries",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "egg substitute",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "vanilla extract",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "baking soda",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "baking powder",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "cinnamon",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "salt",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "nutmeg",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "cloves",
+            "states": [
+                "intact"
+            ],
+            "ingredients": [],
+            "container": null
+        }
+    ],
+    "motion_nodes": [
+        {
+            "label": "pick-and-place",
+            "inputs": [
+                {
+                    "label": "cutting board",
+                    "states": [
+                        "empty"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                },
+                {
+                    "label": "banana",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "cutting board",
+                    "states": [],
+                    "ingredients": [
+                        "banana"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "banana",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": "cutting board"
+                }
+            ]
+        },
+        {
+            "label": "cut-banana",
+            "inputs": [
+                {
+                    "label": "banana",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": "cutting board"
+                },
+                {
+                    "label": "knife",
+                    "states": [],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "banana",
+                    "states": [
+                        "cut"
+                    ],
+                    "ingredients": [],
+                    "container": "cutting board"
+                }
+            ]
+        },
+        {
+            "label": "pick-and-place",
+            "inputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [
+                        "empty"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                },
+                {
+                    "label": "cut banana",
+                    "states": [
+                        "cut"
+                    ],
+                    "ingredients": [],
+                    "container": "cutting board"
+                },
+                {
+                    "label": "wheat flour",
+                    "states": [
+                        "intact"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "cut banana"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "wheat flour",
+                    "states": [],
+                    "ingredients": [],
+                    "container": "mixing bowl"
+                },
+                {
+                    "label": "cut banana",
+                    "states": [
+                        "cut"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "mix",
+            "inputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "spoon",
+                    "states": [],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana"
+                    ],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "add-ingredient",
+            "inputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "sugar in the raw",
+                    "states": [
+                        "intact"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana",
+                        "sugar in the raw"
+                    ],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "add-ingredient",
+            "inputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana",
+                        "sugar in the raw"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "applesauce",
+                    "states": [
+                        "intact"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana",
+                        "sugar in the raw",
+                        "applesauce"
+                    ],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "add-ingredient",
+            "inputs": [
+                {
+                    "label": "mixing bowl",
+                    "states": [],
+                    "ingredients": [
+                        "wheat flour",
+                        "cut banana",
+                        "sugar in the raw",
+                        "applesauce"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "vegetable oil blend",
+                    "states": [
+                        "intact"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "outputs": [
+                {
+                    "label": "mixing bowl",

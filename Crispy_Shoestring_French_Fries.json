@@ -1,0 +1,80 @@
+[
+   {
+      "input_nodes": [
+         {
+            "label": "french fries",
+            "states": [
+               "frozen"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "vegetable oil",
+            "states": [
+               "liquid"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "pot",
+            "states": [
+               "empty"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "heat oil",
+      "output_nodes": [
+         {
+            "label": "pot",
+            "states": [],
+            "ingredients": [
+               "vegetable oil"
+            ],
+            "container": null
+         },
+         {
+            "label": "vegetable oil",
+            "states": [
+               "heated"
+            ],
+            "ingredients": [],
+            "container": "pot"
+         }
+      ]
+   },
+   {
+      "input_nodes": [
+         {
+            "label": "french fries",
+            "states": [
+               "frozen"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "pot",
+            "states": [],
+            "ingredients": [
+               "vegetable oil"
+            ],
+            "container": null
+         }
+      ],
+      "motion_node": "fry",
+      "output_nodes": [
+         {
+            "label": "french fries",
+            "states": [
+               "crispy"
+            ],
+            "ingredients": [],
+            "container": "pot"
+         }
+      ]
+   }
+]

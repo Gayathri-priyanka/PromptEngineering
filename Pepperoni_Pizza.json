@@ -1,0 +1,225 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "all purpose flour",
+        "states": [],
+        "ingredients": [
+          "ALL PURPOSE FLOUR"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [],
+        "ingredients": [
+          "WATER"
+        ],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [],
+        "ingredients": [
+          "GRANULATED SUGAR"
+        ],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [],
+        "ingredients": [
+          "SALT"
+        ],
+        "container": null
+      },
+      {
+        "label": "yeast",
+        "states": [],
+        "ingredients": [
+          "YEAST"
+        ],
+        "container": null
+      },
+      {
+        "label": "mozzarella cheese",
+        "states": [],
+        "ingredients": [
+          "MOZZARELLA CHEESE"
+        ],
+        "container": null
+      },
+      {
+        "label": "pizza sauce",
+        "states": [],
+        "ingredients": [
+          "PIZZA SAUCE"
+        ],
+        "container": null
+      },
+      {
+        "label": "deli pepperoni",
+        "states": [],
+        "ingredients": [
+          "DELI PEPPERONI"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "prepare-dough",
+    "output_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "ready"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "ready"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "roll-out-dough",
+    "output_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "rolled"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "rolled"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST"
+        ],
+        "container": null
+      },
+      {
+        "label": "pizza sauce",
+        "states": [],
+        "ingredients": [
+          "PIZZA SAUCE"
+        ],
+        "container": null
+      },
+      {
+        "label": "mozzarella cheese",
+        "states": [],
+        "ingredients": [
+          "MOZZARELLA CHEESE"
+        ],
+        "container": null
+      },
+      {
+        "label": "deli pepperoni",
+        "states": [],
+        "ingredients": [
+          "DELI PEPPERONI"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "assemble-pizza",
+    "output_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "assembled"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST",
+          "PIZZA SAUCE",
+          "MOZZARELLA CHEESE",
+          "DELI PEPPERONI"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "assembled"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST",
+          "PIZZA SAUCE",
+          "MOZZARELLA CHEESE",
+          "DELI PEPPERONI"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "bake-pizza",
+    "output_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "baked"
+        ],
+        "ingredients": [
+          "ALL PURPOSE FLOUR",
+          "WATER",
+          "GRANULATED SUGAR",
+          "SALT",
+          "YEAST",
+          "PIZZA SAUCE",
+          "MOZZARELLA CHEESE",
+          "DELI PEPPERONI"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

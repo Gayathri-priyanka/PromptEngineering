@@ -1,0 +1,243 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "new"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "whole wheat bread",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid egg whites",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "milk",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "granulated sugar",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cinnamon",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "spatula",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "preparation",
+    "output_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "in progress"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "whole wheat bread",
+        "states": [
+          "cut"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid egg whites",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "milk",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "granulated sugar",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "cinnamon",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "in progress"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid egg whites",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "milk",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "granulated sugar",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "cinnamon",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "in progress"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "batter",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "in progress"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "whole wheat bread",
+        "states": [
+          "cut"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "batter",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "spatula",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cook",
+    "output_nodes": [
+      {
+        "label": "Cinnamon Whole Wheat French Toast",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "plate"
+      }
+    ]
+  }
+]

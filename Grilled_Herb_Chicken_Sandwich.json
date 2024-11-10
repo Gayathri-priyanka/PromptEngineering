@@ -1,0 +1,131 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "CHICKEN BREAST",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ORANGE JUICE",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "VEGETABLE OIL BLEND",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "GARLIC",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "DRIED THYME LEAF",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "DRIED BASIL",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "marinate",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "CHICKEN BREAST",
+                "states": [
+                    "marinated"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "CHICKEN BREAST",
+                "states": [
+                    "marinated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "VEGETABLE OIL BLEND",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grill",
+        "output_nodes": [
+            {
+                "label": "CHICKEN BREAST",
+                "states": [
+                    "grilled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "ROLL",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "CHICKEN BREAST",
+                "states": [
+                    "grilled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "assemble-sandwich",
+        "output_nodes": [
+            {
+                "label": "GRILLED HERB CHICKEN SANDWICH",
+                "states": [
+                    "assembled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

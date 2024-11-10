@@ -1,0 +1,96 @@
+{
+    "task_tree": [
+        {
+            "input_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "motion_node": "pick-and-place",
+            "output_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ]
+        },
+        {
+            "input_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "whole"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ],
+            "motion_node": "wash",
+            "output_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "washed"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ]
+        },
+        {
+            "input_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "washed"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ],
+            "motion_node": "spin-dry",
+            "output_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "dried"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ]
+        },
+        {
+            "input_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "dried"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ],
+            "motion_node": "tear",
+            "output_nodes": [
+                {
+                    "label": "Green Leaf Lettuce",
+                    "states": [
+                        "torn"
+                    ],
+                    "ingredients": [],
+                    "container": "bowl"
+                }
+            ]
+        }
+    ]
+}

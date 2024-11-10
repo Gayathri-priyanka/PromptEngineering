@@ -1,0 +1,20 @@
+```json
+[
+  {
+    "input_nodes": [
+      {
+        "label": "ingredient list",
+        "states": [
+          "American Cheese"
+        ],
+        "ingredients": [
+          "American Cheese "
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": null,
+    "output_nodes": []
+  }
+]
+```

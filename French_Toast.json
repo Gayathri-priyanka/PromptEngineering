@@ -1,0 +1,327 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "egg blend",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "2% milk",
+        "states": [
+          "cold"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "granulated sugar",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vanilla extract",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cinnamon",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nutmeg",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "gather_ingredients",
+    "output_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "egg blend",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "2% milk",
+        "states": [
+          "cold"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "granulated sugar",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vanilla extract",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cinnamon",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nutmeg",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "griddle",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on-griddle",
+    "output_nodes": [
+      {
+        "label": "griddle",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "egg blend",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "2% milk",
+        "states": [
+          "cold"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "granulated sugar",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vanilla extract",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cinnamon",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nutmeg",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "whisk",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "gather_and_mix_ingredients",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "clean"
+        ],
+        "ingredients": [
+          "egg blend",
+          "2% milk",
+          "granulated sugar",
+          "vanilla extract",
+          "cinnamon",
+          "nutmeg"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "clean"
+        ],
+        "ingredients": [
+          "egg blend",
+          "2% milk",
+          "granulated sugar",
+          "vanilla extract",
+          "cinnamon",
+          "nutmeg"
+        ],
+        "container": null
+      },
+      {
+        "label": "texas toast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dip_bread_in_batter",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "clean"
+        ],
+        "ingredients": [
+          "egg blend",
+          "2% milk",
+          "granulated sugar",
+          "vanilla extract",
+          "cinnamon",
+          "nutmeg"
+        ],
+        "container": null
+      },
+      {
+        "label": "texas toast",
+        "states": [
+          "dipped"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "dipped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cook_french_toast",
+    "output_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      }
+    ],
+    "motion_node": "plate_french_toast",
+    "output_nodes": [
+      {
+        "label": "texas toast",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "plate"
+      }
+    ]
+  }
+]

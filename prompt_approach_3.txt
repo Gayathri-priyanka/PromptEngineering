@@ -1,0 +1,10 @@
+"I have a recipe for a dish and want to create a corresponding JSON structure that outlines the steps required to make it. Each step should be broken down into three parts:
+
+Input Nodes: This section specifies the initial state (e.g., whole, chopped) and availability of ingredients and equipment needed at the beginning of the step.
+Motion Node: This describes the action performed during the step, such as mixing, baking, or chopping.
+Output Nodes: This details the resulting state of the ingredients and equipment after completing the action.
+Is it possible to generate this JSON structure for a specific dish, considering two files:
+
+Recipe File (e.g., input.json): This file contains information about the recipe, including instructions.
+Inventory File (e.g., kitchen.txt): This file lists all available ingredients and equipment in the kitchen.
+The resulting JSON structure should ensure that all steps, ingredients, and equipment used are verifiable from these two files."

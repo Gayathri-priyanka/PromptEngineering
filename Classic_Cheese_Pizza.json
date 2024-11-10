@@ -1,0 +1,351 @@
+{
+ "task_tree":{
+  "Classic Cheese Pizza":{
+   "input_nodes":[
+    {
+     "label":"all purpose flour",
+     "states":[
+      "unmixed"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"water",
+     "states":[
+      "unmixed"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"yeast",
+     "states":[
+      "unmixed"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"sugar",
+     "states":[
+      "unmixed"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"salt",
+     "states":[
+      "unmixed"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"pizza sauce",
+     "states":[
+      "unopened"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"mozzarella cheese",
+     "states":[
+      "unshredded"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    },
+    {
+     "label":"vegetable oil blend",
+     "states":[
+      "unused"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    }
+   ],
+   "motion_nodes":[
+    {
+     "label":"mix",
+     "input_nodes":[
+      {
+       "label":"all purpose flour",
+       "states":[
+        "unmixed"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"water",
+       "states":[
+        "unmixed"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"yeast",
+       "states":[
+        "unmixed"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"sugar",
+       "states":[
+        "unmixed"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"salt",
+       "states":[
+        "unmixed"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"dough",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"knead",
+     "input_nodes":[
+      {
+       "label":"dough",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"dough",
+       "states":[
+        "kneaded"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"roll out",
+     "input_nodes":[
+      {
+       "label":"dough",
+       "states":[
+        "kneaded"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"pizza crust",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"spread",
+     "input_nodes":[
+      {
+       "label":"pizza crust",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"pizza sauce",
+       "states":[
+        "unopened"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"pizza crust",
+       "states":[
+        "sauced"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"shred",
+     "input_nodes":[
+      {
+       "label":"mozzarella cheese",
+       "states":[
+        "unshredded"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"shredded mozzarella cheese",
+       "states":[
+        "shredded"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"sprinkle",
+     "input_nodes":[
+      {
+       "label":"pizza crust",
+       "states":[
+        "sauced"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      },
+      {
+       "label":"shredded mozzarella cheese",
+       "states":[
+        "shredded"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"pizza",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    },
+    {
+     "label":"bake",
+     "input_nodes":[
+      {
+       "label":"pizza",
+       "states":[
+        "uncooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ],
+     "output_nodes":[
+      {
+       "label":"pizza",
+       "states":[
+        "cooked"
+       ],
+       "ingredients":[
+
+       ],
+       "container":null
+      }
+     ]
+    }
+   ],
+   "output_nodes":[
+    {
+     "label":"pizza",
+     "states":[
+      "cooked"
+     ],
+     "ingredients":[
+
+     ],
+     "container":null
+    }
+   ]
+  }
+ }
+}

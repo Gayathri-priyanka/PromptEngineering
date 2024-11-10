@@ -1,0 +1,327 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "frozen"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "WATER",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "ONION",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "LIME",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "GARLIC",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE OIL BLEND",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "OLIVE OIL",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CILANTRO",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "BLACK PEPPER",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CUMIN",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CHILI POWDER",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "SALT",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "prep",
+    "output_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "thawed",
+          "cut-into-bite-size-pieces"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "ONION",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "LIME JUICE",
+        "states": [
+          "squeezed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "GARLIC",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CILANTRO",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "cut-into-bite-size-pieces"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "ONION",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "LIME JUICE",
+        "states": [
+          "squeezed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "GARLIC",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CILANTRO",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE OIL BLEND",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "OLIVE OIL",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "BLACK PEPPER",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CUMIN",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "CHILI POWDER",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "SALT",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "marinate",
+    "output_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "GRILL",
+        "states": [
+          "ON"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "grill",
+    "output_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "shred",
+    "output_nodes": [
+      {
+        "label": "CHICKEN THIGH",
+        "states": [
+          "shredded"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

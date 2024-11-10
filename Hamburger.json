@@ -1,0 +1,288 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "beef-patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "roll",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "beef-patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef-patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "roll",
+                "states": [],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn-on",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [],
+                "ingredients": [
+                    "beef-patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef-patty",
+                "states": [
+                    "frozen",
+                    "cooking"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "cooking"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "cooking"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "cooking"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "beef-patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "roll",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [],
+                "ingredients": [
+                    "roll"
+                ],
+                "container": null
+            },
+            {
+                "label": "roll",
+                "states": [
+                    "toasting"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "roll",
+                "states": [
+                    "toasting"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "roll",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hamburger",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "beef-patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "roll",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "assemble",
+        "output_nodes": [
+            {
+                "label": "hamburger",
+                "states": [],
+                "ingredients": [
+                    "beef-patty",
+                    "roll"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

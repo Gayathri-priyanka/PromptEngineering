@@ -1,0 +1,174 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on",
+    "output_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "put-on",
+    "output_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "flip",
+    "output_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "take-off",
+    "output_nodes": [
+      {
+        "label": "bacon",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [
+          "BACON"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

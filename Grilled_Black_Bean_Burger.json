@@ -1,0 +1,30 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "black bean veggie burger",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "roll",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "assemble",
+    "output_nodes": [
+      {
+        "label": "grilled black bean burger",
+        "states": [],
+        "ingredients": [
+          "black bean veggie burger",
+          "roll"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

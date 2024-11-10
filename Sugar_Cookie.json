@@ -1,0 +1,358 @@
+{
+    "input_nodes": [
+        {
+            "label": "bowls",
+            "states": [
+                "empty"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "WHEAT FLOUR",
+            "states": [
+                "dry"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "SUGAR",
+            "states": [
+                "dry"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "SALT",
+            "states": [
+                "dry"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "BAKING SODA",
+            "states": [
+                "dry"
+            ],
+            "ingredients": [],
+            "container": null
+        },
+        {
+            "label": "EGGS",
+            "states": [
+                "raw"
+            ],
+            "ingredients": [],
+            "container": null
+        }
+    ],
+    "motion_nodes": [
+        {
+            "label": "pick-and-place",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [
+                        "empty"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                },
+                {
+                    "label": "WHEAT FLOUR",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "WHEAT FLOUR",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": "bowls"
+                }
+            ]
+        },
+        {
+            "label": "pick-and-place",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "SUGAR",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "SUGAR",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": "bowls"
+                }
+            ]
+        },
+        {
+            "label": "pick-and-place",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "BAKING SODA",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "BAKING SODA",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": "bowls"
+                }
+            ]
+        },
+        {
+            "label": "whisk",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA"
+                    ],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA"
+                    ],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "pick-and-place",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "SALT",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "SALT",
+                    "states": [
+                        "dry"
+                    ],
+                    "ingredients": [],
+                    "container": "bowls"
+                }
+            ]
+        },
+        {
+            "label": "whisk",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT"
+                    ],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT"
+                    ],
+                    "container": null
+                }
+            ]
+        },
+        {
+            "label": "pick-and-place",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "EGGS",
+                    "states": [
+                        "raw"
+                    ],
+                    "ingredients": [],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT",
+                        "EGGS"
+                    ],
+                    "container": null
+                },
+                {
+                    "label": "EGGS",
+                    "states": [
+                        "raw"
+                    ],
+                    "ingredients": [],
+                    "container": "bowls"
+                }
+            ]
+        },
+        {
+            "label": "mix",
+            "input_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "WHEAT FLOUR",
+                        "SUGAR",
+                        "BAKING SODA",
+                        "SALT",
+                        "EGGS"
+                    ],
+                    "container": null
+                }
+            ],
+            "output_nodes": [
+                {
+                    "label": "bowls",
+                    "states": [],
+                    "ingredients": [
+                        "sugar cookies dough"
+                    ],
+                    "container": null
+                }
+            ]
+        }
+    ],
+    "output_nodes": [
+        {
+            "label": "bowls",
+            "states": [],
+            "ingredients": [
+                "sugar cookies dough"
+            ],
+            "container": null
+        }
+    ]
+}

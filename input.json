@@ -1,0 +1,206 @@
+[
+    
+    {
+        "category": "Home",
+        "menu": [
+            {
+                "dish": "Hash Brown Potato Patty",
+                "ingredients": [
+                    "HASH BROWN POTATO"
+                ]
+            },
+            {
+                "dish": "Bacon",
+                "ingredients": [
+                    "BACON"
+                ]
+            },
+            {
+                "dish": "Turkey Sausage Patty",
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ]
+            },
+            {
+                "dish": "Fried Just Egg",
+                "ingredients": [
+                    "VEGAN EGG PATTY", "VEGETABLE OIL BLEND"
+                ]
+            },
+            {
+                "dish": "Scrambled Eggs",
+                "ingredients": [
+                    "EGG BLEND"
+                ]
+            },
+            {
+                "dish": "Tofu-Potato Hash",
+                "ingredients": [
+                    "TOFU", "RUSSET POTATO", "MEDIUM SALSA", "ONION", "GREEN PEPPER", "VEGETABLE OIL BLEND", "PARSLEY", "SALT", "GARLIC POWDER", "BLACK PEPPER"
+                ]
+            }           
+        ]
+    },
+    {
+        "category": "GrillHouse",
+        "menu": [
+            {
+                "dish": "Brunch Burger",
+                "ingredients": [
+                    "ANGUS BEEF PATTY", "HASH BROWN POTATO", "HAMBURGER ROLL", "EGG", "BACON", "ONION", "AMERICAN CHEESE", "PANCAKE SYRUP" , "KETCHUP", "VEGETABLE OIL BLEND", "BLACK PEPPER"
+                ]
+            },
+            {
+                "dish": "Grilled Herb Chicken Sandwich",
+                "ingredients": [
+                    "CHICKEN BREAST", "ROLL", "ORANGE JUICE", "VEGETABLE OIL BLEND", "GARLIC", "BLACK PEPPER", "DRIED THYME LEAF", "DRIED BASIL"
+                ]
+            },
+            {
+                "dish": "Char-Grilled Turkey Burger",
+                "ingredients": [
+                    "TURKEY BURGER", "ROLL"
+                ]
+            },
+            {
+                "dish": "Grilled Black Bean Burger",
+                "ingredients": [
+                    "BLACK BEAN VEGGIE BURGER", "ROLL"
+                ]
+            },
+            {
+                "dish": "Hamburger",
+                "ingredients": [
+                    "BEEF PATTY", "ROLL"
+                ]
+            },
+            {
+                "dish": "Dill Pickle Slices ( 1/4 cup)",
+                "ingredients": [
+                    "PICKLE SLICES"
+                ]
+            },
+            {
+                "dish": "Green Leaf Lettuce (1 cup)",
+                "ingredients": [
+                    "LETTUCE"
+                ]
+            },
+            {
+                "dish": "Sliced Red Onions ( 1/2 cup)",
+                "ingredients": [
+                    "ONION"
+                ]
+            },
+            {
+                "dish": "Sliced Tomatoes (1 ozw)",
+                "ingredients": [
+                    "TOMATO"
+                ]
+            },
+            {
+                "dish": "Crispy Chicken Sandwich",
+                "ingredients": [
+                    "CHICKEN BREAST PATTY", "ROLL"
+                ]
+            },
+            {
+                "dish": "American Cheese ( 1/2 ozw)",
+                "ingredients": [
+                    "AMERICAN CHEESE"
+                ]
+            },
+            {
+                "dish": "Cheddar Cheese ( 1/2 ozw)",
+                "ingredients": [
+                    "CHEDDAR CHEESE"
+                ]
+            },
+            {
+                "dish": "Crispy Shoestring French Fries",
+                "ingredients": [
+                    "FRENCH FRIES"
+                ]
+            }      
+        ]
+    },
+    {
+        "category": "TrueBalance",
+        "menu": [
+            {
+                "dish": "Cilantro-Lime Pulled Chicken",
+                "ingredients": ["CHICKEN THIGH", "WATER", "ONION", "LIME JUICE", "GARLIC", "VEGETABLE OIL BLEND", "VEGETABLE OIL", "OLIVE OIL", "CILANTRO", "BLACK PEPPER", "CUMIN", "CHILI POWDER", "SALT"]
+            },
+            {
+                "dish": "Roasted Corn & Potato Soup",
+                "ingredients": ["WATER", "RED POTATO", "TOMATOES", "CORN", "ONION", "GREEN PEPPER", "RED BELL PEPPER", "SALT", "OLIVE OIL", "SUGAR", "SPICES", "DRIED ONIONS", "VINEGAR", "BROWN SUGAR", "GARLIC", "CITRIC ACID", "SMOKE FLAVOR", "CANOLA OIL", "GARLIC", "CANOLA OIL", "SALT", "CUMIN", "CILANTRO", "BLACK PEPPER", "DRIED OREGANO", "SALT", "BLACK PEPPER"]
+            },
+            {
+                "dish": "yellow Basmati Rice",
+                "ingredients": ["WATER", "BASMATI RICE", "CINNAMON", "TURMERIC", "SALT"]
+            },
+            {
+                "dish": "Mexican Black Bean Salad",
+                "ingredients": ["BLACK BEANS", "TOMATO", "CUCUMBER", "ONION", "CANOLA OIL", "LIME JUICE", "RED WINE VINEGAR", "JALAPENO CHILI PEPPERS", "PARSLEY", "GARLIC", "GRANULATED SUGAR", "CILANTRO", "SALT", "CHILI POWDER", "CUMIN", "BLACK PEPPER"]
+            },
+            {
+                "dish": "Southwest Green Beans",
+                "ingredients": ["GREEN BEANS", "ONION", "GARLIC", "CANOLA OIL", "CUMIN", "CHILI POWDER", "CILANTRO"]
+            }
+        ]
+    },
+    
+    {
+        "category": "Hotspot",
+        "menu": [
+            {
+                "dish": "Cinnamon French Toast",
+                "ingredients": ["BREAD", "WATER", "EGG WHITES", "MILK", "GRANULATED SUGAR", "CINNAMON"]
+            },
+            {
+                "dish": "French Toast",
+                "ingredients": ["TEXAS TOAST", "EGG BLEND", "2% MILK", "GRANULATED SUGAR", "VANILLA EXTRACT", "CINNAMON", "NUTMEG"]
+            }
+        ]
+    },
+    {
+        "category": "Slices",
+        "menu": [
+            {
+                "dish": "Classic Cheese Pizza",
+                "ingredients": [
+                    "ALL PURPOSE FLOUR", "MOZZARELLA CHEESE", "WATER", "PIZZA SAUCE", "VEGETABLE OIL BLEND", "SALT", "GRANULATED SUGAR", "YEAST"
+                ]
+            },
+            {
+                "dish": "Pepperoni Pizza",
+                "ingredients": [
+                    "ALL PURPOSE FLOUR", "MOZZARELLA CHEESE", "WATER", "PIZZA SAUCE", "DELI PEPPERONI", "VEGETABLE OIL BLEND", "SALT", "GRANULATED SUGAR", "YEAST"
+                ]
+            }     
+        ]
+    },
+    
+    {
+        "category": "Cup Cakes",
+        "menu": [
+            {
+                "dish": "Iced Cinnamon Roll",
+                "ingredients": ["CINNAMON ROLL", "CREAM CHEESE ICING", "WATER", "CORN SYRUP", "MILK"]
+            },
+            {
+                "dish": "Vegan Blueberry Banana Bread",
+                "ingredients": ["WHEAT FLOUR", "BANANA", "SUGAR IN THE RAW", "APPLESAUCE", "VEGETABLE OIL BLEND", "WATER", "BROWNSUGAR", "BLUEBERRIES", "EGG SUBSTITUTE", "VANILLA EXTRACT", "BAKING SODA", "BAKING POWDER", "CINNAMON", "SALT", "NUTMEG", "CLOVES"]
+            },
+            {
+            "dish": "Chocolate Chip Cookie",
+            "ingredients": ["WHEAT FLOUR", "SUGAR", "CHOCOLATE CHIPS", "WHEAT STARCH", "BAKING SODA", "SALT"]
+            },
+            {
+            "dish": "Sugar Cookie",
+            "ingredients": ["WHEAT FLOUR", "SUGAR", "SALT", "BAKING SODA", "EGGS"]
+            }
+            ]
+    }
+]
+    

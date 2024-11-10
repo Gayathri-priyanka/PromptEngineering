@@ -1,0 +1,68 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "pan",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cheddar_cheese_block",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
+      },
+      {
+        "label": "pan",
+        "states": [],
+        "ingredients": [],
+        "container": "stove"
+      },
+      {
+        "label": "cheddar_cheese_block",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cheddar_cheese_block",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
+      }
+    ],
+    "motion_node": "heat",
+    "output_nodes": [
+      {
+        "label": "cheddar_cheese_block",
+        "states": [
+          "melted"
+        ],
+        "ingredients": [],
+        "container": "pan"
+      }
+    ]
+  }
+]

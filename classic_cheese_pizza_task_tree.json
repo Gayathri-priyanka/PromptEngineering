@@ -1,0 +1,301 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "all purpose flour",
+        "states": [
+          "unmixed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vegetable oil blend",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "yeast",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty",
+          "has flour"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add-and-mix",
+    "output_nodes": [
+      {
+        "label": "all purpose flour",
+        "states": [
+          "mixed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "vegetable oil blend",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "salt",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "yeast",
+        "states": [
+          "dry"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "has ingredients"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "has ingredients"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "knead",
+    "output_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "baking sheet",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "roll-and-place",
+    "output_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "rolled"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      },
+      {
+        "label": "baking sheet",
+        "states": [
+          "has dough"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mozzarella cheese",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "dough",
+        "states": [
+          "rolled"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      }
+    ],
+    "motion_node": "grate-and-spread",
+    "output_nodes": [
+      {
+        "label": "mozzarella cheese",
+        "states": [
+          "grated"
+        ],
+        "ingredients": [],
+        "container": "dough"
+      },
+      {
+        "label": "dough",
+        "states": [
+          "has cheese"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza sauce",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "dough",
+        "states": [
+          "has cheese"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      }
+    ],
+    "motion_node": "spread",
+    "output_nodes": [
+      {
+        "label": "pizza sauce",
+        "states": [
+          "spread"
+        ],
+        "ingredients": [],
+        "container": "dough"
+      },
+      {
+        "label": "dough",
+        "states": [
+          "has sauce"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "dough",
+        "states": [
+          "has sauce"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      },
+      {
+        "label": "oven",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "bake",
+    "output_nodes": [
+      {
+        "label": "classic cheese pizza",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "baking sheet"
+      },
+      {
+        "label": "oven",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

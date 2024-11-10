@@ -1,0 +1,370 @@
+```json
+[
+  {
+    "input_nodes": [
+      {
+        "label": "green beans",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "onions",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "canola oil",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "cumin",
+        "states": [],
+        "ingredients": [
+          "cumin"
+        ],
+        "container": null
+      },
+      {
+        "label": "chili powder",
+        "states": [],
+        "ingredients": [
+          "chili powder"
+        ],
+        "container": null
+      },
+      {
+        "label": "cilantro",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [
+          "cilantro"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "skillet",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on-stove",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "canola oil",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "add-oil-to-pan",
+    "output_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "has oil"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "skillet",
+        "states": [
+          "has oil"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "heat-oil",
+    "output_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "hot oil"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onions",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "cutting board",
+        "states": [
+          "has onions"
+        ],
+        "ingredients": [
+          "onions"
+        ],
+        "container": null
+      },
+      {
+        "label": "onions",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onions",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "chop-onions",
+    "output_nodes": [
+      {
+        "label": "onions",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "hot oil"
+        ],
+        "ingredients": [
+          "canola oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "onions",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "add-onions-to-pan",
+    "output_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "has onions"
+        ],
+        "ingredients": [
+          "canola oil",
+          "onions"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "has onions"
+        ],
+        "ingredients": [
+          "canola oil",
+          "onions"
+        ],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "cutting board",
+        "states": [
+          "has garlic"
+        ],
+        "ingredients": [
+          "garlic"
+        ],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "mince-garlic",
+    "output_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "skillet",
+        "states": [
+          "has onions"
+        ],
+        "ingredients": [
+          "canola oil",
+          "onions"
+        ],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"

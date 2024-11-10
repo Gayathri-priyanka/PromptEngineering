@@ -1,0 +1,95 @@
+[
+   {
+      "input_nodes": [
+         {
+            "label": "grill",
+            "states": [
+               "cold"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "turkey burger",
+            "states": [
+               "raw"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "turn-on-grill",
+      "output_nodes": [
+         {
+            "label": "grill",
+            "states": [
+               "hot"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ]
+   },
+   {
+      "input_nodes": [
+         {
+            "label": "grill",
+            "states": [
+               "hot"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "turkey burger",
+            "states": [
+               "raw"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "grill-burger",
+      "output_nodes": [
+         {
+            "label": "turkey burger",
+            "states": [
+               "cooked"
+            ],
+            "ingredients": [],
+            "container": "grill"
+         }
+      ]
+   },
+   {
+      "input_nodes": [
+         {
+            "label": "turkey burger",
+            "states": [
+               "cooked"
+            ],
+            "ingredients": [],
+            "container": null
+         },
+         {
+            "label": "roll",
+            "states": [
+               "unopened"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "assemble-burger",
+      "output_nodes": [
+         {
+            "label": "turkey burger",
+            "states": [
+               "assembled"
+            ],
+            "ingredients": [],
+            "container": "roll"
+         }
+      ]
+   }
+]

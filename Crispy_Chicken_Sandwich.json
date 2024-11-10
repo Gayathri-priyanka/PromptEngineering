@@ -1,0 +1,192 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "roll",
+                "states": [
+                    "intact"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken breast patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "roll",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn-on",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "in bottle"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "preparing-crispy-chicken",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [],
+                "ingredients": [
+                    "chicken breast patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "partially cooked"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "in bottle"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "partially cooked"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            },
+            {
+                "label": "roll",
+                "states": [
+                    "intact"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "chicken breast patty",
+                "states": [
+                    "partially cooked"
+                ],
+                "ingredients": [],
+                "container": "roll"
+            },
+            {
+                "label": "roll",
+                "states": [],
+                "ingredients": [
+                    "chicken breast patty"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

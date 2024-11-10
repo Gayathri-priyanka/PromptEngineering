@@ -1,0 +1,123 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "Turkey Sausage Patty",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": null
+            },
+            {
+                "label": "Griddle",
+                "states": [
+                    "cold"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "frozen Turkey Sausage Patty",
+                "states": [],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": "Griddle"
+            },
+            {
+                "label": "Griddle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frozen Turkey Sausage Patty",
+                "states": [],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": "Griddle"
+            },
+            {
+                "label": "Griddle",
+                "states": [
+                    "cold"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "thawed Turkey Sausage Patty",
+                "states": [
+                    "thawed"
+                ],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": "Griddle"
+            },
+            {
+                "label": "Griddle",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "thawed Turkey Sausage Patty",
+                "states": [
+                    "thawed"
+                ],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": "Griddle"
+            },
+            {
+                "label": "Griddle",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooked Turkey Sausage Patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "TURKEY SAUSAGE"
+                ],
+                "container": "Griddle"
+            },
+            {
+                "label": "Griddle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

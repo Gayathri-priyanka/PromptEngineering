@@ -1,0 +1,193 @@
+{
+ "job_tree": [
+  {
+   "input_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "empty"
+     ],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "water",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "basmati rice",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "turmeric",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "cinnamon",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "salt",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    }
+   ],
+   "motion_node": "pick-and-place",
+   "output_nodes": [
+    {
+     "label": "pot",
+     "states": [],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    },
+    {
+     "label": "water",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "basmati rice",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "turmeric",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "cinnamon",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    },
+    {
+     "label": "salt",
+     "states": [],
+     "ingredients": [],
+     "container": null
+    }
+   ]
+  },
+  {
+   "input_nodes": [
+    {
+     "label": "pot",
+     "states": [],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ],
+   "motion_node": "heat-up",
+   "output_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "heated"
+     ],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ]
+  },
+  {
+   "input_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "heated"
+     ],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ],
+   "motion_node": "simmer",
+   "output_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "simmered"
+     ],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ]
+  },
+  {
+   "input_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "simmered"
+     ],
+     "ingredients": [
+      "water",
+      "basmati rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ],
+   "motion_node": "cook",
+   "output_nodes": [
+    {
+     "label": "pot",
+     "states": [
+      "cooked"
+     ],
+     "ingredients": [
+      "cooked rice",
+      "turmeric",
+      "cinnamon",
+      "salt"
+     ],
+     "container": null
+    }
+   ]
+  }
+ ]
+}

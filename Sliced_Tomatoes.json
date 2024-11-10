@@ -1,0 +1,62 @@
+[
+   {
+      "input_nodes": [
+         {
+            "label": "tomato",
+            "states": [
+               "whole"
+            ],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "pick-and-place",
+      "output_nodes": [
+         {
+            "label": "cutting board",
+            "states": [],
+            "ingredients": [
+               "tomato"
+            ],
+            "container": null
+         },
+         {
+            "label": "tomato",
+            "states": [
+               "whole"
+            ],
+            "ingredients": [],
+            "container": "cutting board"
+         }
+      ]
+   },
+   {
+      "input_nodes": [
+         {
+            "label": "tomato",
+            "states": [
+               "whole"
+            ],
+            "ingredients": [],
+            "container": "cutting board"
+         },
+         {
+            "label": "knife",
+            "states": [],
+            "ingredients": [],
+            "container": null
+         }
+      ],
+      "motion_node": "slice",
+      "output_nodes": [
+         {
+            "label": "tomato",
+            "states": [
+               "sliced"
+            ],
+            "ingredients": [],
+            "container": "cutting board"
+         }
+      ]
+   }
+]

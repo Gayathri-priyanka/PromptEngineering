@@ -1,0 +1,82 @@
+Generate the task tree for the given dish in the input content file by utilizing the 'input.json' provided for menu items and the 'kitchen.txt' for available ingredients and equipment.
+Make that there are input, motion, and output nodes in every job tree. 
+The nodes ought to depict the entire process of making every dish, including all required phases including ingredient preparation, cooking, and final assembly.
+Initial circumstances and elements that are available should be listed in the input nodes; particular actions conducted during preparation should be described in the motion nodes; and changes and final states following each action should be detailed in the output nodes. 
+Verify that all procedures are followed and that the equipment and ingredients are available from the input files.
+
+ 
+example slicing tomato :
+[
+    {
+       "input_nodes": [
+           {
+               "label": "cutting board",
+               "states": [
+                   "empty"
+               ],
+               "ingredients": [],
+               "container": null
+           },
+           {
+               "label": "tomato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "pick-and-place",
+       "output_nodes": [
+           {
+               "label": "cutting board",
+               "states": [],
+               "ingredients": [
+                   "tomato"
+               ],
+               "container": null
+           },
+           {
+               "label": "tomato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           }
+       ]
+   },
+   {
+       "input_nodes": [
+           {
+               "label": "tomato",
+               "states": [
+                   "whole"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           },
+           {
+               "label": "knife",
+               "states": [],
+               "ingredients": [],
+               "container": null
+           }
+       ],
+       "motion_node": "slice",
+       "output_nodes": [
+           {
+               "label": "tomato",
+               "states": [
+                   "sliced"
+               ],
+               "ingredients": [],
+               "container": "cutting board"
+           }
+       ]
+   }
+]
+ 
+   ensure that the task tree should be generated in this format which I have provided in example
+
+  

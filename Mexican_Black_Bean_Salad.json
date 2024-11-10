@@ -1,0 +1,376 @@
+{
+    "jobTree": {
+        "taskTree": [
+            {
+                "input_nodes": [
+                    {
+                        "label": "BLACK BEANS",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "TOMATO",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "CUCUMBER",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "bowl",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "pick-and-place",
+                "output_nodes": [
+                    {
+                        "label": "bowl",
+                        "states": [],
+                        "ingredients": [
+                            "BLACK BEANS",
+                            "TOMATO",
+                            "CUCUMBER",
+                            "ONION",
+                        ],
+                        "container": null
+                    },
+                    {
+                        "label": "BLACK BEANS",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "TOMATO",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "CUCUMBER",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "cutting board",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "knife",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "slice",
+                "output_nodes": [
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "sliced"
+                        ],
+                        "ingredients": [],
+                        "container": "cutting board"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "CUCUMBER",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "cutting board",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "knife",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "slice",
+                "output_nodes": [
+                    {
+                        "label": "CUCUMBER",
+                        "states": [
+                            "sliced"
+                        ],
+                        "ingredients": [],
+                        "container": "cutting board"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "TOMATO",
+                        "states": [
+                            "whole"
+                        ],
+                        "ingredients": [],
+                        "container": "bowl"
+                    },
+                    {
+                        "label": "cutting board",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "knife",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "slice",
+                "output_nodes": [
+                    {
+                        "label": "TOMATO",
+                        "states": [
+                            "sliced"
+                        ],
+                        "ingredients": [],
+                        "container": "cutting board"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "CANOLA OIL",
+                        "states": [
+                            "liquid"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "pot",
+                        "states": [],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "pick-and-place",
+                "output_nodes": [
+                    {
+                        "label": "pot",
+                        "states": [],
+                        "ingredients": [
+                            "CANOLA OIL"
+                        ],
+                        "container": null
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "pot",
+                        "states": [
+                            "empty"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL"
+                        ],
+                        "container": null
+                    },
+                    {
+                        "label": "stove",
+                        "states": [
+                            "off"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ],
+                "motion_node": "turn-on",
+                "output_nodes": [
+                    {
+                        "label": "stove",
+                        "states": [
+                            "on"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "pot",
+                        "states": [
+                            "cold"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL"
+                        ],
+                        "container": "stove"
+                    },
+                    {
+                        "label": "stove",
+                        "states": [
+                            "on",
+                            "hot"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "sliced"
+                        ],
+                        "ingredients": [],
+                        "container": "cutting board"
+                    }
+                ],
+                "motion_node": "stir-fry",
+                "output_nodes": [
+                    {
+                        "label": "pot",
+                        "states": [
+                            "hot"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL",
+                            "ONION"
+                        ],
+                        "container": "stove"
+                    },
+                    {
+                        "label": "ONION",
+                        "states": [
+                            "fried"
+                        ],
+                        "ingredients": [],
+                        "container": "pot"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "LIME JUICE",
+                        "states": [
+                            "liquid"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "pot",
+                        "states": [
+                            "hot"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL",
+                            "ONION"
+                        ],
+                        "container": "stove"
+                    }
+                ],
+                "motion_node": "squeeze-and-pour",
+                "output_nodes": [
+                    {
+                        "label": "pot",
+                        "states": [
+                            "hot"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL",
+                            "ONION",
+                            "LIME JUICE"
+                        ],
+                        "container": "stove"
+                    }
+                ]
+            },
+            {
+                "input_nodes": [
+                    {
+                        "label": "RED WINE VINEGAR",
+                        "states": [
+                            "liquid"
+                        ],
+                        "ingredients": [],
+                        "container": null
+                    },
+                    {
+                        "label": "pot",
+                        "states": [
+                            "hot"
+                        ],
+                        "ingredients": [
+                            "CANOLA OIL",
+                            "ONION",
+                            "LIME JUICE"
+                        ],
+                        "container": "stove"
+                    }
+                ],
+                "motion_node": "pour",
+                "output_nodes": [
+                    {
+                        "label

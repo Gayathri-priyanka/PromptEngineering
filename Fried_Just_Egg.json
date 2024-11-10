@@ -1,0 +1,221 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "refrigerator",
+        "states": [
+          "closed"
+        ],
+        "ingredients": [
+          "VEGAN EGG PATTY",
+          "VEGETABLE OIL BLEND"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "open-door",
+    "output_nodes": [
+      {
+        "label": "refrigerator",
+        "states": [
+          "open"
+        ],
+        "ingredients": [
+          "VEGAN EGG PATTY",
+          "VEGETABLE OIL BLEND"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [],
+        "ingredients": [],
+        "container": "refrigerator"
+      },
+      {
+        "label": "plate",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+          "VEGAN EGG PATTY"
+        ],
+        "container": null
+      },
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [],
+        "ingredients": [],
+        "container": "plate"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE OIL BLEND",
+        "states": [],
+        "ingredients": [],
+        "container": "refrigerator"
+      },
+      {
+        "label": "griddle",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on-stove",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "griddle",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "VEGETABLE OIL BLEND",
+        "states": [],
+        "ingredients": [],
+        "container": "refrigerator"
+      }
+    ],
+    "motion_node": "add-oil-to-griddle",
+    "output_nodes": [
+      {
+        "label": "griddle",
+        "states": [
+          "oiled"
+        ],
+        "ingredients": [
+          "VEGETABLE OIL BLEND"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [],
+        "ingredients": [],
+        "container": "plate"
+      },
+      {
+        "label": "griddle",
+        "states": [
+          "oiled"
+        ],
+        "ingredients": [
+          "VEGETABLE OIL BLEND"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "add-to-griddle",
+    "output_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [
+          "cooking"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      }
+    ],
+    "motion_node": "cook-egg",
+    "output_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "griddle"
+      },
+      {
+        "label": "plate",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "VEGAN EGG PATTY",
+        "states": [],
+        "ingredients": [],
+        "container": "plate"
+      },
+      {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+          "VEGAN EGG PATTY"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,233 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "EGG BLEND",
+                "states": [
+                    "unopened"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": null
+            },
+            {
+                "label": "pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open-container",
+        "output_nodes": [
+            {
+                "label": "EGG BLEND",
+                "states": [
+                    "open"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": null
+            },
+            {
+                "label": "pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "EGG BLEND",
+                "states": [
+                    "open"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": null
+            },
+            {
+                "label": "pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": "stove"
+            },
+            {
+                "label": "EGG BLEND",
+                "states": [
+                    "open"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn-on-stove",
+        "output_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on",
+                    "low"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["EGG BLEND"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on",
+                    "low"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["SCRAMBLED EGGS"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on",
+                    "low"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["SCRAMBLED EGGS"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on",
+                    "low"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn-off-stove",
+        "output_nodes": [
+            {
+                "label": "pan",
+                "states": [
+                    "1/4 full"
+                ],
+                "ingredients": ["SCRAMBLED EGGS"],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

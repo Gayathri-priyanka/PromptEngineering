@@ -1,0 +1,153 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "ANGUS BEEF PATTY",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "freezer"
+            },
+            {
+                "label": "HASH BROWN POTATO",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "freezer"
+            },
+            {
+                "label": "BACON",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "freezer"
+            },
+            {
+                "label": "EGG",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "refrigerator"
+            },
+            {
+                "label": "HAMBURGER ROLL",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "freezer"
+            },
+            {
+                "label": "ONION",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pancake syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "shelf"
+            },
+            {
+                "label": "ketchup",
+                "states": [],
+                "ingredients": [],
+                "container": "shelf"
+            }
+        ],
+        "motion_nodes": [
+            "place-angus-beef-patty-on-griddle",
+            "place-hash-brown-potato-on-griddle",
+            "place-egg-on-griddle",
+            "turn-on-stove",
+            "turn-on-griddle",
+            "cook-angus-beef-patty",
+            "cook-hash-brown-potato",
+            "cook-egg",
+            "toast-hamburger-roll",
+            "slice-onion",
+            "assemble-brunch-burger"
+        ],
+        "output_nodes": [
+            {
+                "label": "ANGUS BEEF PATTY",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "HASH BROWN POTATO",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "EGG",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "HAMBURGER ROLL",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ONION",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "BRUNCH BURGER",
+                "states": [
+                    "assembled"
+                ],
+                "ingredients": [
+                    "ANGUS BEEF PATTY",
+                    "HASH BROWN POTATO",
+                    "EGG",
+                    "HAMBURGER ROLL",
+                    "ONION",
+                    "PANCAKE SYRUP",
+                    "KETCHUP"
+                ],
+                "container": null
+            }
+        ]
+    }
+]
