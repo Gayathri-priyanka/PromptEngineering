@@ -4,7 +4,7 @@ import json
 import google.generativeai as genai
 
 # do not reveal your api key when submitting the assignment
-GOOGLE_API_KEY = "AIzaSyB1wrPHHE8SVTRAfV3HANR-X8JcDm0ysOc"  
+GOOGLE_API_KEY = "API key"  
 genai.configure(api_key=GOOGLE_API_KEY)
 def list_genai_models():
     for m in genai.list_models():
